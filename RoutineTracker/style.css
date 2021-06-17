@@ -19,7 +19,7 @@
   background-color: var(--green);
   height: 400px;
   width: auto;
-  padding: 100px 0;
+  padding: 50px 0;
 }
 
 .hero-body {
@@ -45,6 +45,6 @@
   margin: auto;
   width: 50%;
   /*FOR TESTING: border: 3px solid green;*/
-  padding: 100px 0;
+  padding: 140px 0;
   text-align: center;
 }
