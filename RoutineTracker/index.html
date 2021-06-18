@@ -7,10 +7,11 @@
         content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
     <link rel="stylesheet" href="style.css" />
-    <title>Spoons</title>
+    <title>Routine Tracker | Spoons</title>
 </head>
 
 <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 <!--NAVIGATION BAR-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
@@ -36,7 +37,7 @@
                 </a>
             </div>
             <div class="navbar-item">
-                <a class="button is-primary" href="../RoutineTracker/index.html">
+                <a class="button is-light" href="../RoutineTracker/index.html">
                     <strong>Track My Routine</strong>
                 </a>
             </div>
@@ -61,35 +62,47 @@
     <!--TASK LIST CONTAINER-->
     <div class="container">
         <div class="box task columns">
-            <div class="column is-3">
-                Checkbox to mark complete?
+            <div class="column is-2">
+                Icon
             </div>
-            <div class="column is-8">
-                <h4 class="title is-4">Task name</h4></div>
-            <div class="column is-1">
-                <a class="button is-white is-justify-content-end" href="../Timer/index.html">Timer</a>
+            <div class="column is-3">
+                <h4 class="title is-4">Eat Breakfast</h4>
+            </div>
+            <div class="column is-4">
+                <p>You deserve to enjoy food and feel energized!</p>
+            </div>
+            <div class="column is-2">
+                <a id="task1Btn" class="button is-primary is-justify-content-end" href="../Timer/index.html">Start</a>
             </div>
         </div>
 
         <div class="box task columns">
-            <div class="column is-3">
-                Checkbox to mark complete?
+            <div class="column is-2">
+                Icon
             </div>
-            <div class="column is-8">
-                <h4 class="title is-4">Task name</h4></div>
-            <div class="column is-1">
-            <a class="button is-white is-justify-content-end" href="../Timer/index.html">Timer</a>
+            <div class="column is-3">
+                <h4 class="title is-4">Get Dressed</h4>
+            </div>
+            <div class="column is-4">
+                <p>You deserve to wear clean clothes!</p>
+            </div>
+            <div class="column is-2">
+            <a id="task2Btn" class="button disabled" title="Disabled button" disabled>Complete</a>
             </div>
         </div>
 
         <div class="box task columns">
-            <div class="column is-3">
-                Checkbox to mark complete?
+            <div class="column is-2">
+                Icon
             </div>
-            <div class="column is-8">
-                <h4 class="title is-4">Task name</h4></div>
-            <div class="column is-1">
-                <a class="button is-white is-justify-content-end" href="../Timer/index.html">Timer</a>
+            <div class="column is-3">
+                <h4 class="title is-4">Brush Teeth</h4>
+            </div>
+            <div class="column is-4">
+                <p>You deserve to have a beautiful smile!</p>
+            </div>
+            <div class="column is-2">
+                <a id="task3Btn" class="button is-primary is-justify-content-end" href="../Timer/index.html">Start</a>
             </div>
         </div>
     </div>
@@ -108,6 +121,7 @@
     </footer>
             <script src="./scripts.js" type="module">
             </script>
+
 </body>
 
 </html>
