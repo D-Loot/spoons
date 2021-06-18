@@ -48,3 +48,20 @@
   padding: 140px 0;
   text-align: center;
 }
+
+/*
+.kittenContainer {
+  background-color: var(--lightbrown);
+  height: 400px;
+  width: auto;
+  margin: 30px 0 0;
+}
+*/
+
+.kitten {
+  margin: auto;
+  width: 50%;
+  /*FOR TESTING: border: 3px solid green;*/
+  padding: 140px 0;
+  text-align: center;
+}

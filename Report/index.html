@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <link rel="stylesheet" href="../RoutineTracker/style.css" />
+        <title>Timer | Spoons</title>
+    </head>
 
-    <link rel="stylesheet" href="style.css" />
+    <body>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
-    <title>Spoons</title>
-    <!--navigation bar-->
-    <div class="topnav">
-        <a class="active" href="About">About</a>
-        <a href="#HowtoUse">How to Use</a>
-        <a href="#Report">Report</a>
-        <a href="#TrackYourRoutine">Track Your Routine</a>
-    </div>
-</head>
-<!--buttons for redirect to routine tracker and about page-->
-<body>
-    <button class="button timer">Timer</button>
-    <button class="button report">Report</button>
-    <button class="button tracker">Track Your Routine</button>
+    <!--NAVIGATION BAR-->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="../assets/spoons-logo-large.png" alt="Spoons">
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="button is-light" href="../about/index.html">
+                        About
+                    </a>
+                    </div>
+                <div class="navbar-item">
+                    <a class="button is-light" href="../about/index.html">
+                        How to Use
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="button is-light" href="../Report/index.html">
+                        Report
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="button is-light" href="../RoutineTracker/index.html">
+                        <strong>Track Your Routine</strong>
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-    <!--Quote of the Day will display here, towards the bottom of the page-->
-    <script src="./scripts.js" type="module">
-    </script>
-</body>
+    <!--UTILITIES HEADER-->
+    <section class="hero">
+        <div class="hero-body">
+          <h1 class="title is-1">
+            Spoons, a routine tracker
+          </h1>
+          <p class="subtitle">
+            Primary subtitle
+          </p>
+          <button class="button is-large">Report</button>
+          <button class="button is-large">Track Your Routine</button>
+        </div>
+      </section>
 
-</html>
+        <!--REPORT CONTAINER-->
+        <div class="container">
+
+        </div>
+
+    <!--QUOTE OF THE DAY SECTION-->
+    <section class="quoteContainer">
+            <div class="quote">
+                <h2 class="title is-2">"Know yourself and you will win all battles."</h2>
+                <h4 class="title is-4">Sun Tzu</h4>
+            </div>
+    </section>
+
+    <!--FOOTER-->
+        <footer>
+            Made by Caitlin B., Dan L., & Keely B. | 2021
+        </footer>
+                <script src="./scripts.js" type="module">
+                </script>
+
+    </body>
+
+    </html>

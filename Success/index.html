@@ -1,31 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1.0" />
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css">
+        <link rel="stylesheet" href="../RoutineTracker/style.css" />
+        <title>Success!! | Spoons</title>
+    </head>
 
-<head>
-    <meta charset="UTF-8" />
-    <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+    <body>
 
-    <link rel="stylesheet" href="style.css" />
+    <!--NAVIGATION BAR-->
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <img src="../assets/spoons-logo-large.png" alt="Spoons">
+                </a>
+            </div>
+            <div class="navbar-end">
+                <div class="navbar-item">
+                    <a class="button is-light" href="../about/index.html">
+                        About
+                    </a>
+                    </div>
+                <div class="navbar-item">
+                    <a class="button is-light" href="../about/index.html">
+                        How to Use
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="button is-light" href="../Report/index.html">
+                        Report
+                    </a>
+                </div>
+                <div class="navbar-item">
+                    <a class="button is-light" href="../RoutineTracker/index.html">
+                        <strong>Track My Routine</strong>
+                    </a>
+                </div>
+            </div>
+        </nav>
 
-    <title>Spoons</title>
-    <!--navigation bar-->
-    <div class="topnav">
-        <a class="active" href="About">About</a>
-        <a href="#HowtoUse">How to Use</a>
-        <a href="#Report">Report</a>
-        <a href="#TrackYourRoutine">Track Your Routine</a>
-    </div>
-</head>
-<!--buttons for daily, weekly, cleaning-->
-<body>
-    <button class="button daily">Daily</button>
-    <button class="button weekly">Weekly</button>
-    <button class="button cleaning">Cleaning</button>
+    <!--TRACKER HEADER-->
+    <section class="hero">
+        <div class="hero-body">
+          <h1 class="title is-1">
+            Spoons, a routine tracker
+          </h1>
+          <p class="subtitle">
+            Primary subtitle
+          </p>
+          <button class="button is-large">See Your Report</button>
+        </div>
+      </section>
+
 <!--Success Kitten API will go here-->
-    <script src="./scripts.js" type="module">
-    </script>
-</body>
-<!--Quote of the Day will display here, towards the bottom of the page-->
-</html>
+<div class="container">
+<div class="kitten">Testing</div>
 
+</div>
+
+<!--QUOTE OF THE DAY SECTION-->
+<section class="quoteContainer">
+    <div class="quote">
+        <h2 class="title is-2">"Know yourself and you will win all battles."</h2>
+        <h4 class="title is-4">Sun Tzu</h4>
+    </div>
+</section>
+
+<!--FOOTER-->
+<footer>
+    Made by Caitlin B., Dan L., & Keely B. | 2021
+</footer>
+        <script src="./scripts.js" type="module">
+        </script>
+</body>
+
+</html>
