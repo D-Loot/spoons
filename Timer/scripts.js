@@ -49,9 +49,9 @@ function startTimer() {
         }
       }
       if (x === 0) {
-        linkToMainPage.href = "../Success/index.html";
+        linkToMainPage.href = "../success/index.html";
       } else {
-        linkToMainPage.href = "../RoutineTracker/index.html"; // TODO: verify that this link is going to the correct place
+        linkToMainPage.href = "../index.html"; // TODO: verify that this link is going to the correct place
       }
 
       linkToMainPage.textContent = "COMPLETED";
