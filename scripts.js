@@ -81,24 +81,26 @@ document.querySelector("#task3Btn").addEventListener("click", function () {
   localStorage.setItem("currentTask", 3);
 });
 
+// QUOTE API
 
-//QUOTE API
+const quote = document.getElementById("quote");
 
-const quote = document.getElementById("quote")
+generateQuote();
 
-generateQuote()
-
-function generateQuote(){
-    const config = {
-        headers: {
-            Accept: 'application/json'
-        },
-    }
-    fetch('https://zenquotes.io/api/random/[your_key]')
+function generateQuote() {
+  const config = {
+    headers: {
+      Accept: "application/json",
+    },
+  };
+  fetch("https://zenquotes.io/api/random/")
     .then((response) => response.json())
     .then((data) => {
-        quoteContainer.innerHTML = `
+      quoteContainer.innerHTML = `
         <h3 class="title is-2">${data.q}</h3>
-        <h4 class="title is-4>${data.a}</h4>`
-    })
+        <h4 class="title is-4>${data.a}</h4>`;
+    });
 }
+
+// KITTEN API
+const kittenurl = "http://placekitten.com/300/300";
