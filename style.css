@@ -1,1 +1,78 @@
-@import 'https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css';
+:root {
+--darkbrown: rgb(203, 153, 126);
+--brown: rgb(221, 190, 169);
+--lightbrown:rgb(255, 232, 214);
+--lightgreen:rgb(183, 183, 164);
+--green:rgb(165, 165, 141);
+--darkgreen: rgb(107, 112, 92);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.navbar {
+  background-color: var(--darkgreen);
+}
+
+.hero-secondary {
+  background-color: var(--lightgreen);
+}
+
+.hero {
+  background-color: var(--green);
+  height: 400px;
+  width: auto;
+  padding: 50px 0;
+}
+
+.hero-body {
+  margin: auto;
+  width: 50%;
+  /*FOR TESTING: border: 3px solid green;*/
+  padding: 70px 0;
+  text-align: center;
+}
+
+.task {
+  margin: 10px;
+}
+
+.quoteContainer {
+  background-color: var(--brown);
+  height: 400px;
+  width: auto;
+  margin: 30px 0 0;
+}
+
+.quote {
+  margin: auto;
+  width: 50%;
+  /*FOR TESTING: border: 3px solid green;*/
+  padding: 140px 0;
+  text-align: center;
+}
+
+.timer-container{
+  margin: 20px;
+  width: 50%;
+  border: 3px solid green;*/
+  padding: 140px 0;
+}
+
+/*
+.kittenContainer {
+  background-color: var(--lightbrown);
+  height: 400px;
+  width: auto;
+  margin: 30px 0 0;
+}
+*/
+
+.kitten {
+  margin: auto;
+  width: 50%;
+  /*FOR TESTING: border: 3px solid green;*/
+  padding: 140px 0;
+  text-align: center;
+}
