@@ -16,11 +16,7 @@
 
     <!--NAVIGATION BAR-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="../assets/spoons-logo-large.png" alt="Spoons" />
-        </a>
-      </div>
+
       <div class="navbar-end">
         <div class="navbar-item">
           <a class="button is-light" href="../about/index.html"> About </a>
@@ -29,10 +25,10 @@
           <a class="button is-light" href="../about/index.html"> How to Use </a>
         </div>
         <div class="navbar-item">
-          <a class="button is-light" href="../Report/index.html"> Report </a>
+          <a class="button is-light" href="../report/index.html"> Report </a>
         </div>
         <div class="navbar-item">
-          <a class="button is-light" href="../RoutineTracker/index.html">
+          <a class="button is-light" href="../index.html">
             <strong>Track My Routine</strong>
           </a>
         </div>
@@ -45,8 +41,8 @@
         <h1 class="title is-1">Spoons, a routine tracker</h1>
         <p class="subtitle">Primary subtitle</p>
         <button class="button is-large">Daily</button>
-        <button class="button is-large">Weekly</button>
-        <button class="button is-large">Cleaning</button>
+        <button class="button is-large" title="Disabled button" disabled>Weekly</button>
+        <button class="button is-large" title="Disabled button" disabled>Cleaning</button>
       </div>
     </section>
 
@@ -110,15 +106,15 @@
     <!--QUOTE OF THE DAY SECTION-->
     <section class="quoteContainer">
       <div id="quote">
-        <h2 class="title is-2">
-          "Know yourself and you will win all battles."
-        </h2>
-        <h4 class="title is-4">Sun Tzu</h4>
+
       </div>
     </section>
 
     <!--FOOTER-->
-    <footer>Made by Caitlin B., Dan L., & Keely B. | 2021</footer>
+    <footer>Made by Caitlin B., Dan L., & Keely B. | 2021
+      Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>
+
+    </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="scripts.js" type="module"></script>
