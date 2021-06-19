@@ -17,7 +17,7 @@ function loadTaskInformation() {
   // ??? When the event is complete, change the event's color on the main page???
   for (let i = 1; i <= 3; i++) {
     // TODO: update the "3"
-    if (localStorage.getItem(`${dayValue}-task${i}Completed`) === true) {
+    if (localStorage.getItem(`${dayValue}-task${i}Completed`) === "true") {
       const btnComplete = document.getElementById(`task${i}Btn`);
       btnComplete.removeAttribute("enabled", "");
       btnComplete.setAttribute("disabled", "");
