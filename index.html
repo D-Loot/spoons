@@ -16,19 +16,18 @@
 
     <!--NAVIGATION BAR-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-
       <div class="navbar-end">
-        <div class="navbar-item">
-          <a class="button is-light" href="../about/index.html"> About </a>
+        <!-- <div class="navbar-item">
+          <a class="button is-light" href="./about/index.html"> About </a>
         </div>
         <div class="navbar-item">
-          <a class="button is-light" href="../about/index.html"> How to Use </a>
+          <a class="button is-light" href="./about/index.html"> How to Use </a>
+        </div> -->
+        <div class="navbar-item">
+          <a class="button is-light" href="./report/index.html"> Report </a>
         </div>
         <div class="navbar-item">
-          <a class="button is-light" href="../report/index.html"> Report </a>
-        </div>
-        <div class="navbar-item">
-          <a class="button is-light" href="../index.html">
+          <a class="button is-light" href="./index.html">
             <strong>Track My Routine</strong>
           </a>
         </div>
@@ -39,17 +38,29 @@
     <section class="hero">
       <div class="hero-body">
         <h1 class="title is-1">Spoons, a routine tracker</h1>
-        <p class="subtitle">Primary subtitle</p>
+        <!-- <p class="subtitle">Primary subtitle</p> -->
         <button class="button is-large">Daily</button>
-        <button class="button is-large" title="Disabled button" disabled>Weekly</button>
-        <button class="button is-large" title="Disabled button" disabled>Cleaning</button>
+        <button class="button is-large" title="Disabled button" disabled>
+          Weekly
+        </button>
+        <button class="button is-large" title="Disabled button" disabled>
+          Cleaning
+        </button>
       </div>
     </section>
 
     <!--TASK LIST CONTAINER-->
     <div class="container">
       <div class="box task columns">
-        <div class="column is-2">Icon</div>
+        <label for="task1Spoons" class="title">🥄</label>
+        <input
+          type="number"
+          id="task1Spoons"
+          name="task1Spoons"
+          min="1"
+          max="15"
+        />
+        <!-- <div class="column is-2">Icon</div> -->
         <div class="column is-3">
           <h4 class="title is-4">Eat Breakfast</h4>
         </div>
@@ -57,17 +68,25 @@
           <p>You deserve to enjoy food and feel energized!</p>
         </div>
         <div class="column is-2">
-          <a
-            id="task1Btn"
-            class="button is-primary is-justify-content-end"
-            href="../timer/index.html"
-            >Start
+
+          <a id="task1Btn" class="button is-primary is-justify-content-end">
+            <!-- href="./Timer/index.html" -->
+            Start
+
           </a>
         </div>
       </div>
 
       <div class="box task columns">
-        <div class="column is-2">Icon</div>
+        <label for="task2Spoons" class="title">🥄</label>
+        <input
+          type="number"
+          id="task2Spoons"
+          name="task2Spoons"
+          min="1"
+          max="15"
+        />
+        <!-- <div class="column is-2">Icon</div> -->
         <div class="column is-3">
           <h4 class="title is-4">Get Dressed</h4>
         </div>
@@ -75,17 +94,25 @@
           <p>You deserve to wear clean clothes!</p>
         </div>
         <div class="column is-2">
-          <a
-            id="task2Btn"
-            class="button is-primary is-justify-content-end"
-            href="../timer/index.html"
-            >Start
+
+          <a id="task2Btn" class="button is-primary is-justify-content-end">
+            <!-- href="./Timer/index.html" -->
+            Start
+
           </a>
         </div>
       </div>
 
       <div class="box task columns">
-        <div class="column is-2">Icon</div>
+        <label for="task3Spoons" class="title">🥄</label>
+        <input
+          type="number"
+          id="task3Spoons"
+          name="task3Spoons"
+          min="1"
+          max="15"
+        />
+        <!-- <div class="column is-2">Icon</div> -->
         <div class="column is-3">
           <h4 class="title is-4">Brush Teeth</h4>
         </div>
@@ -93,11 +120,35 @@
           <p>You deserve to have a beautiful smile!</p>
         </div>
         <div class="column is-2">
-          <a
-            id="task3Btn"
-            class="button is-primary is-justify-content-end"
-            href="../timer/index.html"
-            >Start
+
+          <a id="task3Btn" class="button is-primary is-justify-content-end">
+            <!-- href="./Timer/index.html" -->
+            Start
+          </a>
+        </div>
+      </div>
+
+      <div class="box task columns">
+        <label for="task4Spoons" class="title">🥄</label>
+        <input
+          type="number"
+          id="task4Spoons"
+          name="task4Spoons"
+          min="1"
+          max="15"
+        />
+        <!-- <div class="column is-2">Icon</div> -->
+        <div class="column is-3">
+          <h4 class="title is-4">Take Medication</h4>
+        </div>
+        <div class="column is-4">
+          <p>You deserve to pursue a healthy and fulfilled life</p>
+        </div>
+        <div class="column is-2">
+          <a id="task4Btn" class="button is-primary is-justify-content-end">
+            <!-- href="./Timer/index.html" -->
+            Start
+
           </a>
         </div>
       </div>
@@ -105,18 +156,14 @@
 
     <!--QUOTE OF THE DAY SECTION-->
     <section class="quoteContainer">
-      <div id="quote">
-
-      </div>
+      <div id="quote"></div>
     </section>
 
     <!--FOOTER-->
-    <footer>Made by Caitlin B., Dan L., & Keely B. | 2021
-      Inspirational quotes provided by <a href="https://zenquotes.io/" target="_blank">ZenQuotes API</a>
-
-    </footer>
+    <footer class="footer">Made by Caitlin B., Dan L., & Keely B.</footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="scripts.js" type="module"></script>
+    <script src="api.js" type="module"></script>
   </body>
 </html>

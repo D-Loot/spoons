@@ -4,15 +4,7 @@
 
 // ------------------------------------------
 
-const dayValue = moment().format("DDDD"); // It would not let me commit because of the "moment" function
-// const dayValue = 20;
-
-// TODO: ADD THE SPOONS VALUE FROM THE FIRST PAGE TO:
-// [DATE]-spoons
-
-// When the "Completed" is selected, stop the timer,
-// Save the new time by storing it to the local storage
-// ??? then Display a button to go back to the main page ???
+const dayValue = moment().format("DDDD");
 
 // When the "Start timer" is selected, start and display a timer
 // create a function to display the time using the time interval function
@@ -40,7 +32,9 @@ function startTimer() {
 
       let x = 0;
 
-      for (let i = 1; i < 4; i++) {
+
+      for (let i = 1; i <= 4; i++) {
+
         console.log(localStorage.getItem(`${dayValue}-task${i}Completed`));
         if (localStorage.getItem(`${dayValue}-task${i}Completed`) === "false") {
           x = 1;
