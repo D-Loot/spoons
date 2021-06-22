@@ -57,7 +57,7 @@
   margin: 20px;
   width: 50%;
   border: 3px solid green;*/
-  padding: 140px 0;paddingpaddingpaddingpadding
+  padding: 140px 0;paddingpaddingpaddingpaddingpadding
 }
 
 /*
@@ -69,7 +69,7 @@
 }
 */
 
-.kitten {
+#kittenContainer {
   margin: auto;
   width: 50%;
   /*FOR TESTING: border: 3px solid green;*/

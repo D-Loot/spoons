@@ -14,18 +14,7 @@
   <body>
     <!--NAVIGATION BAR-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
-      <div class="navbar-brand">
-        <a class="navbar-item" href="#">
-          <img src="../assets/spoons-logo-large.png" alt="Spoons" />
-        </a>
-      </div>
       <div class="navbar-end">
-        <div class="navbar-item">
-          <a class="button is-light" href="../about/index.html"> About </a>
-        </div>
-        <div class="navbar-item">
-          <a class="button is-light" href="../about/index.html"> How to Use </a>
-        </div>
         <div class="navbar-item">
           <a class="button is-light" href="../Report/index.html"> Report </a>
         </div>
@@ -41,20 +30,22 @@
     <section class="hero">
       <div class="hero-body">
         <h1 class="title is-1">Spoons, a routine tracker</h1>
-        <p class="subtitle">Primary subtitle</p>
-        <button class="button is-large">
-          <a href="../Report/index.html"> See Your Report</a>
+        <button class="button is-large" href="../Report/index.html">
+          See Your Report
         </button>
       </div>
     </section>
 
     <!--Success Kitten API will go here-->
     <div class="container">
-      <div class="kitten"></div>
+      <div id="kittenContainer">
+        <h2 class="title is-2 is-centered">You Did It!!</h2>
+      </div>
     </div>
 
     <!--FOOTER-->
     <footer>Made by Caitlin B., Dan L., & Keely B. | 2021</footer>
     <script src="./scripts.js" type="module"></script>
+    <script src="./api.js"></script>
   </body>
 </html>
