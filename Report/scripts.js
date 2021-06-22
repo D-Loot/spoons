@@ -32,6 +32,7 @@ function getDayHistory() {
 
     // CYCLE THROUGH EACH DAY AND ADD THAT TIME TO THE TOTAL TIME
     // REF: https://stackoverflow.com/questions/5223/length-of-a-javascript-object
+
     for (let x = 0; x < Object.keys(dayRecord).length; x++) {
       // https://stackoverflow.com/questions/983267/how-to-access-the-first-property-of-a-javascript-object
       const dayValue = dayRecord[Object.keys(dayRecord)[x]].date;

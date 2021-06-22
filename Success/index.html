@@ -14,7 +14,20 @@
   <body>
     <!--NAVIGATION BAR-->
     <nav class="navbar" role="navigation" aria-label="main navigation">
+
+      <div class="navbar-brand">
+        <!-- <a class="navbar-item" href="#">
+          <img src="../assets/spoons-logo-large.png" alt="Spoons" />
+        </a> -->
+      </div>
       <div class="navbar-end">
+        <!-- <div class="navbar-item">
+          <a class="button is-light" href="../about/index.html"> About </a>
+        </div>
+        <div class="navbar-item">
+          <a class="button is-light" href="../about/index.html"> How to Use </a>
+        </div> -->
+
         <div class="navbar-item">
           <a class="button is-light" href="../Report/index.html"> Report </a>
         </div>
@@ -27,12 +40,15 @@
     </nav>
 
     <!--TRACKER HEADER-->
-    <section class="hero">
+    <section class="hero is-small">
       <div class="hero-body">
         <h1 class="title is-1">You Did It!!</h1>
-        <a class="button is-light" href="../report/index.html">
-          See Your Report
-        </a>
+
+        <!-- <p class="subtitle">Primary subtitle</p> -->
+        <button class="button is-large">
+          <a href="../Report/index.html" class="is-light">See Your Report</a>
+        </button>
+
       </div>
     </section>
 
@@ -45,6 +61,6 @@
     <footer class="footer">
       Made by Caitlin B., Dan L., & Keely B. | 2021
     </footer>
-    <script src="./scripts.js" type="module"></script>
+    <script src="../api.js"></script>
   </body>
 </html>
