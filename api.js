@@ -1,6 +1,8 @@
 // QUOTE API
+
 const quote = document.getElementById("quote");
 generateQuote();
+
 function generateQuote() {
   fetch("https://api.kanye.rest")
     .then((response) => response.json())

@@ -85,7 +85,7 @@ document.querySelector("#task1Btn").addEventListener("click", function (event) {
   localStorage.setItem("currentTask", 1);
   saveSpoonVals();
   // remove the hyperlink from HTML and load it here after the above tasks are completed
-  window.location.href = "./Timer/index.html";
+  window.location.href = "./timer/index.html";
   event.preventDefault();
 });
 
@@ -93,21 +93,21 @@ document.querySelector("#task2Btn").addEventListener("click", function () {
   localStorage.setItem("currentTask", 2);
   saveSpoonVals();
   // remove the hyperlink from HTML and load it here after the above tasks are completed
-  location.href = "./Timer/index.html";
+  location.href = "./timer/index.html";
 });
 
 document.querySelector("#task3Btn").addEventListener("click", function () {
   localStorage.setItem("currentTask", 3);
   saveSpoonVals();
   // remove the hyperlink from HTML and load it here after the above tasks are completed
-  location.href = "./Timer/index.html";
+  location.href = "./timer/index.html";
 });
 
 document.querySelector("#task4Btn").addEventListener("click", function () {
   localStorage.setItem("currentTask", 4);
   saveSpoonVals();
   // remove the hyperlink from HTML and load it here after the above tasks are completed
-  location.href = "./Timer/index.html";
+  location.href = "./timer/index.html";
 });
 
 function saveSpoonVals() {
@@ -123,27 +123,3 @@ function loadSpoonValues() {
     spoonNum.value = localStorage.getItem(`${dayValue}-task${i}Spoons`);
   }
 }
-
-// QUOTE API ---------------------------------------------
-
-// const quote = document.getElementById("quote");
-
-// generateQuote();
-
-// function generateQuote() {
-//   const config = {
-//     headers: {
-//       Accept: "application/json",
-//     },
-//   };
-//   fetch("https://zenquotes.io/api/random/")
-//     .then((response) => response.json())
-//     .then((data) => {
-//       quoteContainer.innerHTML = `
-//         <h3 class="title is-2">${data.q}</h3>
-//         <h4 class="title is-4>${data.a}</h4>`;
-//     });
-// }
-
-// // KITTEN API
-// const kittenurl = "http://placekitten.com/300/300";
