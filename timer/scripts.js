@@ -32,7 +32,9 @@ function startTimer() {
 
       let x = 0;
 
+
       for (let i = 1; i <= 4; i++) {
+
         console.log(localStorage.getItem(`${dayValue}-task${i}Completed`));
         if (localStorage.getItem(`${dayValue}-task${i}Completed`) === "false") {
           x = 1;
